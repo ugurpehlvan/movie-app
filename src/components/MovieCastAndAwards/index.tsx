@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 // Component 
 import Typography from 'components/Typography'
-import Information from 'components/molecules/Information'
+import Information from 'components/Information'
 
 // Utility 
 import { moveFromLeft } from 'utils/animations'
@@ -12,14 +12,13 @@ import { moveFromLeft } from 'utils/animations'
 import { IMovieDetail } from 'types/movieType'
 
 // Asset 
-import styles from './movieRatings.module.scss'
+import styles from './movieCastAndAwards.module.scss'
 
-type IMovieRatingsProps = {
-	/** Movie detail. */
+type IMovieCastAndAwardsProps = {
 	detail: IMovieDetail | null
 }
 
-const MovieRatings = ({ detail }: IMovieRatingsProps) => {
+const MovieCastAndAwards = ({ detail }: IMovieCastAndAwardsProps) => {
 	return (
 		<motion.div
 			variants={moveFromLeft}
@@ -34,15 +33,15 @@ const MovieRatings = ({ detail }: IMovieRatingsProps) => {
 				size='xl'
 				weight='semibold'
 			>
-				Ratings
+				Cast & Awards
 			</Typography>
-			{/* Movie Rating Title */}
+			{/* Movie Cast & Awards Title */}
 			<Typography
 				size='4xl'
 				className={styles.title}
 				capitalize
 			>
-				Ratings for{' '}
+				cast & awards for{' '}
 				<Typography
 					element='span'
 					size='4xl'
@@ -51,31 +50,38 @@ const MovieRatings = ({ detail }: IMovieRatingsProps) => {
 					'{detail?.Title}'
 				</Typography>
 			</Typography>
-			{/* Meta Score */}
+			{/* Movie Awards */}
 			<Information
-				info='Meta Score'
-				value={detail?.Metascore}
+				info='Awards'
+				value={detail?.Awards}
 			/>
-			{/* IMDB Rating */}
+			{/* Movie Director */}
 			<Information
-				info='IMDB Rating'
-				value={detail?.imdbRating}
+				info='Director'
+				value={detail?.Director}
 			/>
-			{/* IMDB voting */}
+			{/* Movie Actors */}
 			<Information
-				info='IMDB votes'
-				value={detail?.imdbVotes}
+				info='Actors'
+				value={detail?.Actors}
 			/>
-			{/* Other Ratings */}
-			{detail?.Ratings.map((rating, index) => (
-				<Information
-					key={index}
-					info={rating.Source}
-					value={rating.Value}
-				/>
-			))}
+			{/* Movie Writer */}
+			<Information
+				info='Writer'
+				value={detail?.Writer}
+			/>
+			{/* Movie Production */}
+			<Information
+				info='Production'
+				value={detail?.Production}
+			/>
+			{/* Movie BoxOffice */}
+			<Information
+				info='Box Office'
+				value={detail?.BoxOffice}
+			/>
 		</motion.div>
 	)
 }
 
-export default MovieRatings
+export default MovieCastAndAwards

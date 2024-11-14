@@ -2,7 +2,7 @@
 import { AnimatePresence } from 'framer-motion'
 
 // Component 
-import MovieCard from 'components/molecules/MovieCard'
+import MovieCard from 'components/MovieCard'
 
 // Type 
 import { IMovie } from 'types/movieType'

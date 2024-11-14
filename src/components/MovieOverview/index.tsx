@@ -5,7 +5,7 @@ import { FaRegCalendar } from 'react-icons/fa'
 
 // Component 
 import Typography from 'components/Typography'
-import Information from 'components/molecules/Information'
+import Information from 'components/Information'
 
 // Utility 
 import { moveFromLeft } from 'utils/animations'
@@ -30,13 +30,6 @@ const MovieOverview = ({ detail }: IMovieOverviewProps) => {
 			transition={{ duration: 0.5 }}
 			className={styles.container}
 		>
-			{/* Tab Title */}
-			<Typography
-				size='xl'
-				weight='semibold'
-			>
-				Overview
-			</Typography>
 			{/* Movie Title */}
 			<Typography
 				element='h1'

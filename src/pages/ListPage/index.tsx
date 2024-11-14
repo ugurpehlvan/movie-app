@@ -5,10 +5,10 @@ import { useSearchParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
 // Component 
-import Filters from 'components/organisms/Filters'
+import Filters from 'components/Filters'
 import Typography from 'components/Typography'
-import Pagination from 'components/molecules/Pagination'
-import MovieGrid from 'components/organisms/MovieGrid'
+import Pagination from 'components/Pagination'
+import MovieGrid from 'components/MovieGrid'
 
 // Store 
 import { fetchMovies } from 'store/thunks/movieThunks'

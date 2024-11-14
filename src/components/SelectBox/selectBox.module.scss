@@ -6,11 +6,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border: 1px solid #6eacda;
+		border: 1px solid #1677FF;
 		border-radius: 4px;
 		padding: 8px;
 		background: #ffffff;
-		color: #6eacda;
+		color: #1677FF;
 		cursor: pointer;
 		user-select: none;
 
@@ -36,7 +36,7 @@
 		pointer-events: none;
 		transition: all 0.3s;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		border: 1px solid #6eacda;
+		border: 1px solid #1677FF;
 		border-radius: 4px;
 		overflow: hidden;
 		z-index: 999;
@@ -51,13 +51,13 @@
 		.option {
 			padding: 8px;
 			background: #ffffff;
-			color: #6eacda;
+			color: #1677FF;
 			cursor: pointer;
 			user-select: none;
 			transition: all 0.3s;
 
 			&.selected {
-				background: #6eacda;
+				background: #1677FF;
 				color: #ffffff;
 			}
 		}

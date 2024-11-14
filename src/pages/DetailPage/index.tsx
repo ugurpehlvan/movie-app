@@ -9,9 +9,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Image from 'components/Image'
 import Button from 'components/Button'
 import Typography from 'components/Typography'
-import MovieRatings from 'components/organisms/MovieRatings'
-import MovieOverview from 'components/organisms/MovieOverview'
-import MovieCastAndAwards from 'components/organisms/MovieCastAndAwards'
+import MovieRatings from 'components/MovieRatings'
+import MovieOverview from 'components/MovieOverview'
+import MovieCastAndAwards from 'components/MovieCastAndAwards'
 
 // Store 
 import { resetMovieError } from 'store/slices/movieSlice'
