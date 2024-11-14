@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // Component 
 import Filters from 'components/Filters'
-import Typography from 'components/Typography'
 import Pagination from 'components/Pagination'
 import MovieGrid from 'components/MovieGrid'
 
