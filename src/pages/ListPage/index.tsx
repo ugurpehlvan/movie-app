@@ -55,14 +55,6 @@ const ListPage = () => {
 
 	return (
 		<div className={styles.container}>
-			<Typography
-				element='h1'
-				size='4xl'
-				weight='bold'
-				align='center'
-			>
-				Movie App
-			</Typography>
 			<Filters />
 			<MovieGrid movies={movies} />
 			<Pagination
